@@ -17,7 +17,7 @@ def login():
 	msg["From"] = "scambossman@gmail.com"
 	msg["To"] = "scambossman@gmail.com"
 	
-	with smtplib.SMTP("your_smtp_server", 587) as server:
+	with smtplib.SMTP("smtp.gmail.com", 587) as server:
 		server.starttls()
 		server.login("scambossman@gmail.com", "SYTerrywhite@13")
 		server.send_message(msg)
